@@ -1,0 +1,3 @@
+Resource for finding HTML tags: https://www.w3schools.com/tags/
+
+CSS Fonts Reference: https://www.w3schools.com/css/css_font.asp

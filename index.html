@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard Maker</title>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Flashcard Maker</h1>
+    <nav>
+      <ul class="dropdown">
+        <li><a href="index.html">Flashcard Maker</a></li>
+        <li><a href="#">Study Methods</a>
+          <ul class="dropdown-content">
+            <li><a href="takeQuiz.html">Take Quiz</a></li>
+            <li><a href="info.html">Info</a></li>
+          </ul>
+        </li>
+        <li><a href="studyTips.html">Study Tips</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p><b>Let's Study! </b>Enter your vocab list below. Make sure to separate the terms with commas. </p>
+
+    <!-- <b>ENTER WORDS HERE: </b>
+    <input></input>
+    <br></br>
+    <br><button>GENERATE FLASHCARDS</button></br>
+make the flashcards-->
+    <form id="flashcardForm">
+      <input type="text" id="wordInput" placeholder="Enter Word" required>
+      <input type="text" id="definitionInput" placeholder="Enter Definition" required>
+      <button type="submit">Add Flashcard</button>
+    </form>
+
+  
+    <div class="flashcards-container" id="flashcardsContainer"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

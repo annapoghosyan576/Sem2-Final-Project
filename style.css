@@ -1,0 +1,73 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #b275bf; /* Light Purple */
+  font-family: 'Overpass', sans-serif;
+  color: #F0F8FF; 
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #9a4dab; /* Darker Purple */
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+ 
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #F0F8FF; 
+  font-weight: 700;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #7e318f; /* Darkest purple */
+  min-width: 160px;
+  z-index: 1;
+}
+
+nav ul li:hover .dropdown-content {
+  display: block;
+}
+
+nav .dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-align: left;
+}
+
+nav .dropdown-content a:hover {
+  background-color: #fa70e3; 
+}
+
+main {
+  padding: 20px;
+  text-align: left;
+}

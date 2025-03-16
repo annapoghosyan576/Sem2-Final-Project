@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard Maker</title>
+  <link href="info.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <script src="info.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Study Methods Info</h1>
+    <nav>
+      <ul class="dropdown">
+        <li><a href="index.html">Flashcard Maker</a></li>
+        <li><a href="#">Study Methods</a>
+          <ul class="dropdown-content">
+            <li><a href="takeQuiz.html">Take Quiz</a></li>
+            <li><a href="info.html">Info</a></li>
+          </ul>
+        </li>
+        <li><a href="studyTips.html">Study Tips</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+<p><b>Learn about study methods!</b> Click through the different study methods and pick the one that works best for you. </p>
+
+    <div class="slideshow-container">
+
+      
+      <div class="mySlides">
+        <p class="studyMethod">POMODORO METHOD</p>
+        <p>Helps maintain focus and prevent burnout.</p>
+        <ol>
+          <li>Set a timer for 25 minutes and focus on studying without distractions.</li>
+          <li>Take a 5-minute break after the session.</li>
+          <li>Repeat this cycle 4 times, then take a longer break (15-30 minutes).</li>
+
+        </ol>
+        
+      </div>
+
+      <div class="mySlides">
+        <p class="studyMethod">ACTIVE RECALL</p>
+        <p>Strengthens long-term memory and understanding.</p>
+        <ol>
+          <li>Read or review material, then close your notes and try to recall key points from memory.</li>
+          <li>Write down or say the information out loud.</li>
+          <li>Check for accuracy and repeat the process, focusing on areas where you struggled.</li>
+        </ol>
+        
+      </div>
+
+      <div class="mySlides">
+        <p class="studyMethod">MIND MAPPING</p>
+        <p>Great for visual learners and organizing complex information.</p>
+        <ol>
+          <li>Start with a central topic or concept in the middle of a page.</li>
+          <li>Draw branches extending from it, each representing a key idea or subtopic.</li>
+          <li>Use keywords, images, and colors to make connections between concepts.</li>
+        </ol>
+       
+      </div>
+
+      <div class="mySlides">
+        <p class="studyMethod">FEYMAN TECHNIQUE</p>
+        <p>Ensures deep understanding and helps identify weak areas.</p>
+        <ol>
+          <li>Choose a concept and try to explain it in simple terms, as if teaching a child.</li>
+          <li>Identify any gaps in your understanding and go back to study them.</li>
+          <li>Simplify and refine your explanation until it is clear and concise.</li>
+        </ol>
+        
+      </div>
+
+     
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+  
+    
+    
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard Maker</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <script src="takeQuiz.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Personality Quiz</h1>
+    <nav>
+      <ul class="dropdown">
+        <li><a href="index.html">Flashcard Maker</a></li>
+        <li><a href="#">Study Methods</a>
+          <ul class="dropdown-content">
+            <li><a href="takeQuiz.html">Take Quiz</a></li>
+            <li><a href="info.html">Info</a></li>
+          </ul>
+        </li>
+        <li><a href="studyTips.html">Study Tips</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p><b>Which Study Method is Best for You? </b>Take the personality quiz below to find out. When you get your result, check the Info tab to learn more about how to implement it! </p>
+      <h2>1. How do you usually feel when studying for long periods?</h2>
+      <div class="question">
+          <button id="q1a1">I get distracted easily and struggle with long study sessions.</button>
+          <button id="q1a2">I need to constantly test myself to check if I understand.</button>
+          <button id="q1a3">I learn best by organizing concepts visually.</button>
+          <button id="q1a4">I like explaining things out loud as if I’m teaching.</button>
+      </div>
+
+      <h2>2. What is your biggest challenge when studying?</h2>
+      <div class="question">
+          <button id="q2a1">Staying focused and avoiding distractions.</button>
+          <button id="q2a2">Remembering information long-term.</button>
+          <button id="q2a3">Organizing complex ideas in a way that makes sense.</button>
+          <button id="q2a4">Truly understanding the material rather than just memorizing.</button>
+      </div>
+
+      <h2>3. How do you prefer to review material?</h2>
+      <div class="question">
+          <button id="q3a1">In short bursts with breaks in between.</button>
+          <button id="q3a2">By testing myself with questions or flashcards.</button>
+          <button id="q3a3">By drawing diagrams to visualize relationships.</button>
+          <button id="q3a4">By simplifying concepts and explaining them to someone.</button>
+      </div>
+
+      <h2>4. What helps you feel more confident before a test?</h2>
+      <div class="question">
+          <button id="q4a1">Knowing I’ve spaced out my studying well.</button>
+          <button id="q4a2">Quizzing myself and answering practice questions.</button>
+          <button id="q4a3">Seeing all my notes in a well-organized chart.</button>
+          <button id="q4a4">Explaining topics in my own words to test my understanding.</button>
+      </div>
+
+      <h2>5. What type of learner are you?</h2>
+      <div class="question">
+          <button id="q5a1">I need structure and scheduled breaks.</button>
+          <button id="q5a2">I need to test myself frequently.</button>
+          <button id="q5a3">I learn best when I see things visually.</button>
+          <button id="q5a4">I understand things best when I teach them.</button>
+      </div>
+
+      <h2>6. What do you do when you don't understand a concept?</h2>
+      <div class="question">
+          <button id="q6a1">Take a break and come back to it later.</button>
+          <button id="q6a2">Find practice questions and test myself.</button>
+          <button id="q6a3">Draw a diagram or chart to organize my thoughts.</button>
+          <button id="q6a4">Try to explain it in simple terms to someone else.</button>
+      </div>
+
+      <h2>7. How do you usually take notes?</h2>
+      <div class="question">
+          <button id="q7a1">I focus on writing down key points quickly.</button>
+          <button id="q7a2">I write down questions that I can quiz myself on later.</button>
+          <button id="q7a3">I use diagrams, charts, or mind maps.</button>
+          <button id="q7a4">I write my notes as if I’m explaining to someone else.</button>
+      </div>
+
+      <h2>8. How do you approach problem-solving?</h2>
+      <div class="question">
+          <button id="q8a1">I take a step back, then work in focused intervals.</button>
+          <button id="q8a2">I try different practice problems to test myself.</button>
+          <button id="q8a3">I map out the problem visually.</button>
+          <button id="q8a4">I try explaining the problem to someone else to find gaps in my understanding.</button>
+      </div>
+
+      <h2>9. What do you do when you feel overwhelmed while studying?</h2>
+      <div class="question">
+          <button id="q9a1">I take a short break and then refocus.</button>
+          <button id="q9a2">I quiz myself to make sure I’m retaining information.</button>
+          <button id="q9a3">I reorganize my notes into a structured layout.</button>
+          <button id="q9a4">I talk through what I’m learning to clarify my thoughts.</button>
+      </div>
+
+      <h2>10. What motivates you to study?</h2>
+      <div class="question">
+          <button id="q10a1">Having a clear study plan with breaks.</button>
+          <button id="q10a2">Seeing improvement through self-testing.</button>
+          <button id="q10a3">Creating detailed and visually appealing study notes.</button>
+          <button id="q10a4">The satisfaction of explaining things well.</button>
+      </div>
+
+      <h2 id="result">Your result is...</h2>
+      <button id="restart">Restart</button>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
