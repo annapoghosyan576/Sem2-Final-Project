@@ -122,8 +122,8 @@ button:hover {
 .flashcard div {
   width: 100%;
   height: 100%;
-  position: absolute;
-  backface-visibility: hidden;
+  position: absolute; /* so that the flashcards don't move when a new one is added*/
+  backface-visibility: hidden; /*hides the back of the flashcard*/
   display: flex;
   align-items: center;
   justify-content: center;
