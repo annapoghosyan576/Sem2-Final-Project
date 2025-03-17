@@ -1,18 +1,18 @@
 const flashcardsContainer = document.getElementById("flashcardsContainer");
 const form = document.getElementById("flashcardForm");
 
-// Load flashcards from local storage
+// local storage
 function loadFlashcards() {
     const storedFlashcards = JSON.parse(localStorage.getItem("flashcards")) || [];
 
-    flashcardsContainer.innerHTML = ""; // Clear existing cards
+    flashcardsContainer.innerHTML = ""; // clear the existing cards
 
     storedFlashcards.forEach((flashcard, index) => {
         createFlashcard(flashcard.word, flashcard.definition, index);
     });
 }
 
-// Create a flashcard element
+// the flashcard element
 function createFlashcard(word, definition, index) {
     const flashcard = document.createElement("div");
     flashcard.classList.add("flashcard");
@@ -24,12 +24,12 @@ function createFlashcard(word, definition, index) {
         flashcard.classList.toggle("flipped");
     });
 
-    // Delete button
+    // make the delete button
     const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "❌";
+    deleteBtn.textContent = "x";
     deleteBtn.classList.add("delete-btn");
     deleteBtn.onclick = (e) => {
-        e.stopPropagation(); // Prevent flipping when deleting
+        e.stopPropagation(); // added so it doesn't flip when you're deleting the card
         deleteFlashcard(index);
     };
 
@@ -37,7 +37,7 @@ function createFlashcard(word, definition, index) {
     flashcardsContainer.appendChild(flashcard);
 }
 
-// Add new flashcard
+// adding a new flashcard
 function addFlashcard(event) {
     event.preventDefault();
 
@@ -52,7 +52,7 @@ function addFlashcard(event) {
     loadFlashcards();
 }
 
-// Delete flashcard
+// deleting flashcards
 function deleteFlashcard(index) {
     let flashcards = JSON.parse(localStorage.getItem("flashcards")) || [];
     flashcards.splice(index, 1);
@@ -61,8 +61,8 @@ function deleteFlashcard(index) {
     loadFlashcards();
 }
 
-// Event Listener
+
 form.addEventListener("submit", addFlashcard);
 
-// Load flashcards on page load
+// adding flashcard to page
 loadFlashcards();

@@ -19,7 +19,7 @@ var count = 0;
 myButton.addEventListener("click", displayFact);
 
 function displayFact(){
-  fact.innerHTML = factList[count];
+  fact.innerHTML = factList[count]; //this line replaces the currently shown fact with a new fact
   count++;
   if (count == factList.length){
     count = 0;
